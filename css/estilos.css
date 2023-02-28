@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+:root {
+  --texto-padrao: #ffffff;
+  --fundo-padrao: #170132;
+  color: var(--fundo-padrao);
+  font-family: Arial, sans-serif;
+}
+main{
+  margin: 0 auto;
+  width: min(1000px, 100% );
+}
+a{
+  color: var(--texto-padrao);
+}
+.area-dados{
+  background-color: var(--fundo-padrao);
+  padding: 20px;
+  border-radius: 30px;
+  margin: 20px;
+  transition: all ease-in-out 0.5;
+}
+.area-dados:hover{
+  background-color: #45239454;
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 15px #ccc;
+  color: var(--fundo-padrao);
+  transition: all ease-in-out 0.5;
+}
+.area-dados > h2 {
+  border-left: 20px solid #000000;
+  color: var(--texto-padrao);
+  padding-left: 10px;
+  transition: all ease-in-out 0.5s;
+}
+.area-dados:hover > h2 {
+  border-left-color: #ffffff;
+}
+#dados-pessoais > h1 {
+  text-align: center;
+}
+#dados-pessoais > div {
+  display: flex;
+}
+#dados-pessoais > div > img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+#dados-pessoais > div > div {
+  margin-left: 50px;
+  text-align: center;
+}
+.infos-lado-a-lado {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.infos-lado-a-lado > .area-dados {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+#habilidades > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#conhecimentos > ul > li {
+  list-style: none;
+  padding: 5px 10px;
+  flex-grow: 3;
+  color: brown;
+  text-align: center;
+  background-color: aquamarine;
+  border: 1px solid rebeccapurple;
+  border-radius: 10px;
+}
+#idiomas > table {
+  width: 100%;
+}
+#idiomas > table > thead > tr {
+  background-color: black;
+}
+h1 {
+  margin: 0;
+  font-size: 36px;
+  color: var(--texto-padrao);
+}
+h3{
+  color: var(--texto-padrao);
+}
+p {
+  margin: 0;
+  font-size: 18px;
+  color: var(--texto-padrao);
+}
+thead {
+  background-color: #170132;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+th,
+td {
+  text-align: left;
+  color: #ffffff;
+  padding: 8px;
+}
+
+th {
+  background-color: #170132;
+}
