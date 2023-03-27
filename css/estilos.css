@@ -7,21 +7,21 @@
   color: var(--fundo-padrao);
   font-family: Arial, sans-serif;
 }
-main{
+main {
   margin: 0 auto;
-  width: min(1000px, 100% );
+  width: min(1000px, 100%);
 }
-a{
+a {
   color: var(--texto-padrao);
 }
-.area-dados{
+.area-dados {
   background-color: var(--fundo-padrao);
   padding: 20px;
   border-radius: 30px;
   margin: 20px;
   transition: all ease-in-out 0.5;
 }
-.area-dados:hover{
+.area-dados:hover {
   background-color: #45239454;
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px 15px #ccc;
@@ -62,16 +62,17 @@ a{
   flex-grow: 1;
   flex-shrink: 1;
 }
-#habilidades > ul {
+.habilidades > ul {
   display: flex;
   flex-wrap: wrap;
+  color: var(--texto-padrao);
   gap: 10px;
 }
-#conhecimentos > ul > li {
+.conhecimentos > ul > li {
   list-style: none;
   padding: 5px 10px;
   flex-grow: 3;
-  color: brown;
+  color: var(--texto-padrao);
   text-align: center;
   background-color: aquamarine;
   border: 1px solid rebeccapurple;
@@ -88,7 +89,7 @@ h1 {
   font-size: 36px;
   color: var(--texto-padrao);
 }
-h3{
+h3 {
   color: var(--texto-padrao);
 }
 p {
